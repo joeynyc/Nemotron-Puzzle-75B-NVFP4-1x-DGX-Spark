@@ -1,0 +1,61 @@
+{
+  "model": "nemotron-puzzle-75b-nvfp4",
+  "wall_s": 11.078808546066284,
+  "span_s": 11.07867169380188,
+  "total_completion_tokens": 834,
+  "aggregate_tok_s": 75.27978290633823,
+  "streams": [
+    {
+      "idx": 0,
+      "label": "CODE",
+      "prompt": "Write a clean Python LRU cache class with get/put. Include type hints and a short docstring. Code only.",
+      "completion_tokens": 220,
+      "prompt_tokens": 63,
+      "ttft_s": 0.44628429412841797,
+      "start_t": 4.9591064453125e-05,
+      "end_t": 8.398009777069092,
+      "events": 63,
+      "error": null,
+      "text_preview": "```python\nfrom typing import Any, Optional\nfrom collections import OrderedDict\n\nclass LRUCache:\n    \"\"\"\n    A simple LRU (Least Recently Used) cache with fixed capacity.\n    Supports get and put operations in O(1) time.\n    \"\"\"\n    def __in"
+    },
+    {
+      "idx": 1,
+      "label": "SYSTEMS",
+      "prompt": "In 8\u201310 sentences, explain how speculative decoding (MTP) increases tokens/sec on a single GPU without changing model weights.",
+      "completion_tokens": 220,
+      "prompt_tokens": 66,
+      "ttft_s": 0.44617414474487305,
+      "start_t": 0.0004572868347167969,
+      "end_t": 9.956490755081177,
+      "events": 79,
+      "error": null,
+      "text_preview": "Speculative decoding (MTP) increases tokens per second on a single GPU by generating multiple candidate tokens in parallel using a lightweight auxiliary model, then verifying them against the main model in a single forward pass. Instead of "
+    },
+    {
+      "idx": 2,
+      "label": "STRUCTURED",
+      "prompt": "Emit a JSON object only (no markdown) with keys: service, endpoints (array of 4 objects with path and method), sla_ms, notes. Realistic values for a local LLM API.",
+      "completion_tokens": 174,
+      "prompt_tokens": 80,
+      "ttft_s": 0.4462141990661621,
+      "start_t": 0.0006177425384521484,
+      "end_t": 6.94021201133728,
+      "events": 51,
+      "error": null,
+      "text_preview": "{\n  \"service\": \"local-llm-api\",\n  \"endpoints\": [\n    {\n      \"path\": \"/v1/completions\",\n      \"method\": \"POST\"\n    },\n    {\n      \"path\": \"/v1/chat/completions\",\n      \"method\": \"POST\"\n    },\n    {\n      \"path\": \"/v1/models\",\n      \"method\""
+    },
+    {
+      "idx": 3,
+      "label": "ENGINEERING",
+      "prompt": "Give a tight checklist (8 bullets) for serving an NVFP4 MoE model on unified-memory GB10: memory, KV cache, concurrency, and prefix caching.",
+      "completion_tokens": 220,
+      "prompt_tokens": 75,
+      "ttft_s": 0.44600772857666016,
+      "start_t": 0.0007302761077880859,
+      "end_t": 11.078721284866333,
+      "events": 92,
+      "error": null,
+      "text_preview": "- Ensure total model + KV cache fits within unified memory (\u226448GB) by quantizing weights (e.g., FP8) and limiting max sequence length per request.  \n- Reserve 20\u201330% of memory for KV cache headroom; compute per-token KV size: (num_layers \u00d7 "
+    }
+  ]
+}
