@@ -23,7 +23,7 @@ https://github.com/joeynyc/Nemotron-Puzzle-75B-NVFP4-1x-DGX-Spark/raw/main/demo/
 
 <video src="demo/nemotron-puzzle-4stream-30fps.mp4" controls width="100%"></video>
 
-[Download MP4](demo/nemotron-puzzle-4stream-30fps.mp4) · [poster](demo/poster.png) · regenerate with [`demo/record_and_render.py`](demo/record_and_render.py)
+[Download MP4](demo/nemotron-puzzle-4stream-30fps.mp4) · regenerate with [`demo/record_and_render.py`](demo/record_and_render.py)
 
 ---
 

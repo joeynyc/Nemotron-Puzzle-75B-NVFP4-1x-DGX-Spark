@@ -9,7 +9,6 @@ server, rendered as a **1080p / 30 fps** dashboard with **no speedup**
 | File | Notes |
 | --- | --- |
 | [`nemotron-puzzle-4stream-30fps.mp4`](nemotron-puzzle-4stream-30fps.mp4) | 1080p · 30 fps · ~15.5 s · ~712 KB |
-| [`poster.png`](poster.png) | Mid-generation still |
 | [`../benchmarks/4stream-recording.json`](../benchmarks/4stream-recording.json) | **75.3 tok/s** aggregate (834 tokens / 11.08 s) |
 
 https://github.com/joeynyc/Nemotron-Puzzle-75B-NVFP4-1x-DGX-Spark/raw/main/demo/nemotron-puzzle-4stream-30fps.mp4
