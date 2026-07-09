@@ -181,9 +181,14 @@ Details: [`benchmarks/RESULTS.md`](benchmarks/RESULTS.md).
 
 ---
 
-## Demo video (optional)
+## Demo video
 
-Render a professional 1080p / 30 fps dashboard of **four live streams** (real wall-clock, no speedup):
+Checked-in reference take (also at top of README):
+
+- **[`demo/nemotron-puzzle-4stream-30fps.mp4`](demo/nemotron-puzzle-4stream-30fps.mp4)** — 1080p / 30 fps, wall-clock, **75.3 tok/s aggregate**
+- Metrics: [`benchmarks/4stream-recording.json`](benchmarks/4stream-recording.json)
+
+Regenerate on your own Spark:
 
 ```bash
 # server must already be up
@@ -191,7 +196,7 @@ python3 demo/record_and_render.py
 # → demo/out/nemotron-puzzle-4stream-30fps.mp4
 ```
 
-Requires: `httpx`, `Pillow`, `ffmpeg` on `PATH`.
+Requires: `httpx`, `Pillow`, `ffmpeg` on `PATH`. Details: [`demo/README.md`](demo/README.md).
 
 ---
 
