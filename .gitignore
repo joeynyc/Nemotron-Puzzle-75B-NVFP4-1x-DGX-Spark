@@ -4,7 +4,7 @@ __pycache__/
 venv/
 demo/out/
 demo/frames/
-*.mp4
 .DS_Store
 .env
 *.log
+# keep the checked-in demo video; ignore other generated mp4s under demo/out

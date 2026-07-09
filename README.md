@@ -15,7 +15,15 @@ Validated **2026-07-08** on `spark-db08` (GB10, driver 580, CUDA 13, unified ~12
 
 **Honest takeaway:** the big win is **concurrency + prefix cache**, not a free jump in solo tok/s. MTP acceptance was already healthy (~75% draft tokens). Turning `max_num_seqs` from 1 → 4 is what made multi-session / multi-stream actually parallel.
 
-Wall-clock 4-stream demo (30 fps, no speedup): generate with [`demo/record_and_render.py`](demo/record_and_render.py).
+### Demo — 4 parallel streams (wall-clock, no speedup)
+
+Four live `/v1/chat/completions` requests on one GB10. **~75 tok/s aggregate.** 1080p · 30 fps · real time.
+
+https://github.com/joeynyc/Nemotron-Puzzle-75B-NVFP4-1x-DGX-Spark/raw/main/demo/nemotron-puzzle-4stream-30fps.mp4
+
+<video src="demo/nemotron-puzzle-4stream-30fps.mp4" controls width="100%"></video>
+
+[Download MP4](demo/nemotron-puzzle-4stream-30fps.mp4) · [poster](demo/poster.png) · regenerate with [`demo/record_and_render.py`](demo/record_and_render.py)
 
 ---
 
